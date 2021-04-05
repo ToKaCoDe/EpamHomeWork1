@@ -1,8 +1,18 @@
 package com.epam.training.array;
 
+import java.util.Arrays;
+
 public class ArraySorter {
 
-    public Array sort(Array array) {
-        throw new UnsupportedOperationException();
-    }
+	public Array sort(Array array) {
+
+		if (array == null) {
+			throw new UnsupportedOperationException();
+		} else {
+
+			Arrays.sort(array.getItems());
+		}
+
+		return array;
+	}
 }
